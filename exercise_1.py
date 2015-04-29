@@ -1,4 +1,4 @@
-# _*_ coding utf-8 _*_
+# -*- coding utf-8 -*-
 
 __author__ = 'jyjung'
 
@@ -7,11 +7,23 @@ list = [6, 7]
 
 x, y = tuple
 dict = {
-    'name' : '정지영',
-    '직책' : '대리'
+    'name' : 'jyjung',
+    'age' : '20'
 }
 
-print p
+
 print x
 print y
 print dict
+
+
+with open('sample', 'rt') as f:
+    data = f.read()
+    print data
+
+
+sum = 0
+for i in range(1, 11):
+    sum = sum + i
+
+print(sum)
